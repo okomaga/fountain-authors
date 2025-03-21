@@ -19,3 +19,35 @@ Make sure you have Python installed along with the required libraries (`requests
 
 ```bash
 python3 extract_authors.py
+
+
+Fountain Authors - Aggregated Article Counts
+=============================================
+
+Author                         | Articles
+---------------------------------------------
+M. Fethullah Gulen             |        350
+Fountain Editors               |        323
+Hikmet Isik                    |         72
+Irfan Yilmaz                   |         48
+Bediuzzaman Said Nursi         |         34
+Seth Mette                     |         33
+Jay Willoughby                 |         20
+Lawrence Brazier               |         19
+Alphonse Dougan                |         18
+Ali Fethi Toprak               |         16
+Mirkena Ozer                   |         15
+Hakan Oztunc                   |         13
+Mustafa Tabanli                |         13
+Ali Unal                       |         13
+Naim Yilmaz                    |         12
+Numan Erciyes                  |         12
+Hamza Aydin                    |         12
+Osman Cakmak                   |         12
+Ceyda Sablak                   |         10
+Dr. Ibrahim B. Syed            |         10
+Justin Pahl                    |         10
+Safiye Arslan                  |         10
+Omer Arifagaoglu               |         10
+---------------------------------------------
+... (Additional authors and counts follow)
