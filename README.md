@@ -17,27 +17,6 @@ This project extracts and aggregates the number of articles per author from [Fou
 
 Make sure you have Python installed along with the required libraries (`requests`, `beautifulsoup4`). Then run code.py
 
-# Summary of Author Contributions
-
-This summary shows the distribution of how many articles each author contributed. The numbers below were calculated by grouping authors based on the number of articles they wrote and then computing the percentage of the total authors.
-
-**Steps to Compute:**
-1. **Group** the aggregated counts by the number of articles per author.
-2. **Count** the number of authors in each group (e.g., how many authors wrote exactly 1 article, exactly 2 articles, etc.).
-3. **Calculate** the percentage for each group relative to the total number of authors.
-
-**Example Summary Table:**
-
-| Articles Written | Number of Authors | Percentage (%) |
-|------------------|-------------------|----------------|
-| 1                | 150               | 60%            |
-| 2                | 50                | 20%            |
-| 3                | 25                | 10%            |
-| 4                | 10                | 4%             |
-| 5 or more        | 15                | 6%             |
-| **Total**        | 250               | 100%           |
-
-*Note: The numbers above are for illustration only. Replace them with the actual values calculated from your data.*
 
 # Fountain Authors - Aggregated Article Counts
 
