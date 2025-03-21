@@ -15,10 +15,7 @@ This project extracts and aggregates the number of articles per author from [Fou
 
 ## How to Run
 
-Make sure you have Python installed along with the required libraries (`requests`, `beautifulsoup4`). Then run:
-
-```bash
-python3 extract_authors.py
+Make sure you have Python installed along with the required libraries (`requests`, `beautifulsoup4`). Then run code.py
 
 
 Fountain Authors - Aggregated Article Counts
