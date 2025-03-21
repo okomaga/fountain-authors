@@ -1,6 +1,6 @@
 # Fountain Authors
 
-This project extracts and aggregates the number of articles per author from [Fountain Magazine Archives](https://fountainmagazine.com/archives). The script scrapes multiple archive pages, extracts author names (with entries containing "Fountain" re-labeled as "Fountain Editors"), and then aggregates the results to show how many articles each author has contributed.
+This project extracts and aggregates the number of articles per author from [Fountain Magazine](https://fountainmagazine.com/archives). The script scrapes multiple archive pages, extracts author names (with entries containing "Fountain" re-labeled as "Fountain Editors"), and then aggregates the results to show how many articles each author has contributed.
 
 ## How It Works
 
