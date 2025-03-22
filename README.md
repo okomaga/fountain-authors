@@ -36,10 +36,3 @@ This project extracts and aggregates the number of articles per author from Foun
   Creates a pie chart showing the percentage of articles from top authors (15–350 articles) vs. those with less than 15 articles.
 - **Additional Information:**  
   The plot includes a summary text detailing total authors, total articles, and a breakdown of authors with less than 15 articles.
-
-## How to Run
-
-1. **Extraction:**  
-   Run the extraction script:
-   ```bash
-   python extract_authors.py
