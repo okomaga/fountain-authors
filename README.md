@@ -43,18 +43,3 @@ This project extracts and aggregates the number of articles per author from Foun
    Run the extraction script:
    ```bash
    python extract_authors.py
-
-	2.	Counting:
-Run the counting script:
-
-python count_authors.py
-
-
-	3.	Plotting:
-Run the plotting script:
-
-python plots_authors.py
-
-
-Ensure you have Python installed along with the required libraries: requests, beautifulsoup4, pandas, and matplotlib.
-
