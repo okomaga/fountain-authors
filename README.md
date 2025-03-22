@@ -1,6 +1,6 @@
 # Fountain Authors
 
-This project extracts and aggregates the number of articles per author from Fountain Magazine and visualizes the results. The process is divided into three steps:
+This project extracts and aggregates the number of articles per author from [Fountain Magazine](https://fountainmagazine.com) and visualizes the results. The process is divided into three steps:
 
 1. **Extraction**  
    The `extract_authors.py` script scrapes archive pages, extracts author names, and saves a raw list of authors to `authors_raw.csv`.
