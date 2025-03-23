@@ -1,6 +1,22 @@
 # Fountain Authors
 
-This project extracts and aggregates the number of articles per author from [The Fountain Magazine](https://fountainmagazine.com) and visualizes the results. The process is divided into three steps:
+This project extracts and aggregates the number of articles per author from [The Fountain Magazine](https://fountainmagazine.com) and visualizes the results. 
+
+## Required Third-Party Packages
+
+The following packages must be installed via pip:
+
+- **pandas**
+- **matplotlib**
+- **requests**
+- **bs4 (BeautifulSoup)**
+
+Install them using the command:
+
+```bash
+pip install pandas matplotlib requests bs4
+
+The process is divided into three steps:
 
 1. **Extraction**  
    The `extract_authors.py` script scrapes archive pages, extracts author names, and saves a raw list of authors to `authors_raw.csv`.
