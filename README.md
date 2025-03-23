@@ -13,8 +13,7 @@ The following packages must be installed via pip:
 
 Install them using the command:
 
-```bash```
-pip install pandas matplotlib requests bs4
+```bash pip install pandas matplotlib requests bs4 ```
 
 
 ## The Process
