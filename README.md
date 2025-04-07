@@ -1,64 +1,71 @@
-# Fountain Authors
+# 📚 Fountain Authors
 
-This project extracts and aggregates the number of articles per author from [The Fountain Magazine](https://fountainmagazine.com) and visualizes the results.
+A 3-part Python project that extracts, analyzes, and visualizes author activity from [The Fountain Magazine](https://fountainmagazine.com).
 
-## Required Third-Party Packages
+This tool scrapes author names from the magazine archive, counts the number of published articles per author, and generates simple visual summaries. The project is designed to demonstrate data pipeline construction (scraping → cleaning → aggregation → visualization) using real-world data.
 
-The following packages must be installed via pip:
+---
 
-- `pandas`
-- `matplotlib`
-- `requests`
-- `bs4` (BeautifulSoup)
+## 🧠 Summary
 
-Install them using the command:
+- 🔎 **Extracts** author data from magazine archives using web scraping (BeautifulSoup + regex)  
+- 📊 **Counts** the number of articles per author using Python's built-in `Counter`  
+- 📈 **Visualizes** the results with:
+  - A bar chart of authors with 15–350 articles  
+  - A pie chart showing the proportion of articles from frequent vs. infrequent contributors  
 
-```bash pip install pandas matplotlib requests bs4 ```
+---
 
+## 🛠️ Required Packages
 
-## The Process
+Install all required packages with:
 
-The process is divided into three steps:
+```bash
+pip install pandas matplotlib requests bs4
+```
+---
 
-1. **Extraction**
-   - The `extract_authors.py` script scrapes archive pages, extracts author names, and saves a raw list of authors to `authors_raw.csv`.
+## 🔧 The Process (3 Steps)
 
-2. **Count and CSV**
-   - The `count_authors.py` script reads `authors_raw.csv`, aggregates the number of articles per author using Python's `Counter`, and outputs the results to `author_counts.csv`.
+### 1. Extraction — `extract_authors.py`
+- Scrapes archive URLs from the magazine’s archive page (regex-based)
+- Extracts author names from each monthly archive page using BeautifulSoup
+- Saves raw author data to `authors_raw.csv`
 
-3. **Plots: Bar Chart & Pie Chart**
-   - The `plots_authors.py` script loads `author_counts.csv` and creates:
-     - A bar chart for authors with 15 to 350 articles.
-     - A pie chart comparing the total articles from top authors (15–350 articles) against authors with fewer than 15 articles.
+### 2. Counting — `count_authors.py`
+- Reads the raw author list from `authors_raw.csv`
+- Aggregates article counts per author using Python’s `Counter`
+- Saves result to `author_counts.csv`
 
-## How It Works
+### 3. Visualization — `plots_authors.py`
+- Loads `author_counts.csv`
+- Filters authors with 15–350 articles
+- Generates:
+  - 📊 Bar chart with article counts  
+  - 🥧 Pie chart comparing top contributors (15–350) to those with <15 articles
+- Adds summary stats to the plot (total authors, article breakdown)
 
-### Extraction: `extract_authors.py`
+---
 
-- **Scraping Archive Pages**
-  - It collects archive URLs using a regular expression that matches `/archives/YYYY/MM` from the main archives page.
+## 🧪 Sample Use Case
 
-- **Extracting Authors**
-  - For each archive page, it parses the HTML with `BeautifulSoup` to extract author names from designated `<div>` elements.
+This project is useful for:
 
-- **Saving Data**
-  - The script writes the list of authors to `authors_raw.csv`.
+- Practicing data pipeline creation  
+- Exploring real publishing data from a media source  
+- Building visualizations for reporting or exploratory analysis  
+- Gaining hands-on experience in web scraping, aggregation, and matplotlib plotting
 
-### Counting: `count_authors.py`
+---
 
-- **Reading and Aggregating Data**
-  - This script reads the raw authors from `authors_raw.csv` and uses Python's `Counter` to compute the article counts per author.
+## 📁 Output Files
 
-- **Output**
-  - The aggregated data is saved to `author_counts.csv` for further processing.
+- `authors_raw.csv` — list of all extracted authors  
+- `author_counts.csv` — article counts per author  
+- `bar_chart.png`, `pie_chart.png` — visual summaries
 
-### Plotting: `plots_authors.py`
+---
 
-- **Bar Chart**
-  - Filters authors with article counts between 15 and 350, then generates a bar chart with count labels on each bar.
+## 📬 Contact
 
-- **Pie Chart**
-  - Creates a pie chart showing the percentage of articles from top authors (15–350 articles) vs. those with less than 15 articles.
-
-- **Additional Information**
-  - The plot includes a summary text detailing total authors, total articles, and a breakdown of authors with less than 15 articles.
+If you’re hiring for roles in data analysis, research, or media analytics — or want to chat about Fountain-format scripting, I’m open to collaboration.
